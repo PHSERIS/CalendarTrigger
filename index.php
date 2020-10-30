@@ -79,9 +79,9 @@ print $calT->renderHelpDivs();
 	    max = 0;
 	    $('div.trigger', '#triggers_config').each(
 		    function (index,value) {
-			    idx = $(this).attr('idx');
-			    if ($(this).attr('idx') > max) {
-				    max = $(this).attr('idx');
+			    idx = +$(this).attr('idx');
+			    if (idx > max) {
+				    max = idx;
 			    };
 		    }
 	    );
